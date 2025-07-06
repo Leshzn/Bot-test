@@ -1,5 +1,5 @@
 # Bot-test
-Test
+
 HOW TO UPLOAD YOUR FILES TO GITHUB 
 
 🌐 Using the Website (No Terminal Needed):
