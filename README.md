@@ -8,7 +8,10 @@ termux-setup-storage
 git clone https://github.com/Leshzn/Bot-test
 
 # 4. Go to your bot’s folder
-cd /storage/emulated/0/MAOCHAN_MD_V1.4 
+cd /MAOCHAN_MD_V1.4 
+or 
+
+cd /secar/MAOCHAN_MD_V1.4
 
 # 5. Start Run Bot
 npm start
