@@ -1,20 +1,14 @@
-# 1. Update Termux packages to latest versions
+# 1. Update Termux packages and upgrade all
 pkg update && pkg upgrade -y
 
-# 2. Install Git (to download your bot), Python (to run your bot), and Figlet (for cool fonts)
-pkg install git python figlet -y
+# 2. Fix permissions for Termux storage access (if needed)
+termux-setup-storage
 
 # 3. Download your bot’s code from GitHub
-git clone https://your-bot-link.git
+git clone https://github.com/Leshzn/Bot-test
 
 # 4. Go to your bot’s folder
-cd your-bot-folder
+cd /storage/emulated/0/MAOCHAN_MD_V1.4 
 
-# 5. Install required Python libraries for your bot
-pip install -r requirements.txt
-
-# 6. Show a stylish startup message
-figlet -f slant "Starting ★ Bot"
-
-# 7. Run your bot with a special character argument
-python bot.py ★
+# 5. Start Run Bot
+npm start
