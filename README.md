@@ -1,32 +1,20 @@
-# Bot-test
+# 1. Update Termux packages to latest versions
+pkg update && pkg upgrade -y
 
-HOW TO UPLOAD YOUR FILES TO GITHUB 
+# 2. Install Git (to download your bot), Python (to run your bot), and Figlet (for cool fonts)
+pkg install git python figlet -y
 
-🌐 Using the Website (No Terminal Needed):
+# 3. Download your bot’s code from GitHub
+git clone https://your-bot-link.git
 
-① Go to your GitHub repo  
-② Click “Add file” → “Upload files”  
-③ Drag & drop or select your files  
-④ Write a commit message (e.g., “Add bot files 🤖”)  
-⑤ Click “Commit changes”
+# 4. Go to your bot’s folder
+cd your-bot-folder
 
----
+# 5. Install required Python libraries for your bot
+pip install -r requirements.txt
 
-🖥️ Using Terminal (e.g., Termux):
+# 6. Show a stylish startup message
+figlet -f slant "Starting ★ Bot"
 
-$ cd path/to/your-bot  
-$ git init  
-$ git add .  
-$ git commit -m "Add bot files 🤖"  
-$ git remote add origin https://github.com/your-username/your-repo.git  
-$ git branch -M main  
-$ git push -u origin main
-
-⚠️ When prompted for username and password:  
-- Use your GitHub username  
-- Use a Personal Access Token (https://github.com/settings/tokens) instead of password
-
----
-
- That’s it! Your bot is now on GitHub.  
-Push updates anytime you want!
+# 7. Run your bot with a special character argument
+python bot.py ★
